@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Chatbot</title>
+	<link rel="icon" href="bot.png" />
+	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+</head>
+
+<body>
+	<div id="container" class="container">
+		<div class="row">
+			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam doloribus numquam facilis esse
+				corrupti itaque! Molestiae, exercitationem. Non aut blanditiis omnis rerum incidunt laboriosam
+				repellendus unde dolor eos sit? Esse.
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus consectetur vel iusto ab suscipit
+				repellat at incidunt aspernatur harum, cumque ducimus explicabo voluptate nisi? Quas doloribus porro
+				possimus ipsam itaque!
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae inventore, voluptate eaque explicabo
+				in rem quidem. Illo ipsam unde nemo necessitatibus nesciunt natus, aliquam, molestias odio quo, ea
+				eveniet dicta.
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae assumenda dicta rem impedit ipsum,
+				asperiores maiores. Aperiam, ratione incidunt corrupti consequatur autem sapiente est error voluptates
+				illum sit tempora delectus.
+			</p>
+		</div>
+	</div>
+	<div class="bot-btn">
+		<div class="w3-container">
+			<button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Chat</button>
+	
+			<div id="id01" class="w3-modal">
+				<div class="w3-modal-content">
+					<div class="w3-container">
+						<span onclick="document.getElementById('id01').style.display='none'"
+							class="w3-button w3-display-topright">&times;</span>
+						<div id="chat" class="chat">
+							<div id="messages" class="messages"></div>
+							<input id="input" type="text" placeholder="Say something..." autocomplete="off"
+								autofocus="true" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="index.js"></script>
+<script type="text/javascript" src="constants.js"></script>
+<script type="text/javascript" src="speech.js"></script>
+
+</html>
